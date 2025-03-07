@@ -1,5 +1,5 @@
 package gmail.sklyaruk.rostislav;
-/*
+
 public class Dragon {
     public String getName;
     private String name;
