@@ -13,7 +13,7 @@ public class Dragon {
     @Override
     public String toString() {
         return "Dragon{" +
-                "name='"+ name + '\'' +
+                "name='" + name + '\'' +
                 ", age=" + age +
                 ", weight=" + weight +
                 ", voice='" + voice + '\'' +
@@ -40,12 +40,15 @@ public class Dragon {
     public void setVoice(String voice) {
         this.voice = voice;
     }
+
     public String getVoice() { // Getter для фрази
         return this.voice;
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -63,6 +66,8 @@ public class Dragon {
     }
 
     public void setFire(String fire) {
+        this.fire = fire;
+
         System.out.println("Дракон пускає вогонь: " + fire);
     }
 

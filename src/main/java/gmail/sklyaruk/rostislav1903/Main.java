@@ -21,17 +21,21 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введіть ім'я дракона: ");
+        System.out.println("Now you can create a dragon");
+        System.out.println("Please enter the name of your dragon");
+
         String name = scanner.nextLine();
-        String age = scanner.nextLine();
-        String weight = scanner.nextLine();
-        String voice = scanner.nextLine();
-        String fire = scanner.nextLine();
+        System.out.println("Please enter the age of your dragon");
+        int age = scanner.nextInt();
+        System.out.println("Please enter the weight of your dragon");
+        double weight = scanner.nextDouble();
+
         System.out.println("імя " + name);
         System.out.println(age);
         System.out.println(weight);
-        System.out.println(voice);
-
+        System.out.println();
+        boolean fire;
+        System.out.println();
         scanner.close();
     }
 }
