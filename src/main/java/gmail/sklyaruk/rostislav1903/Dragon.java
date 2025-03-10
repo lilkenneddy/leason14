@@ -3,11 +3,21 @@ package gmail.sklyaruk.rostislav1903;
 public class Dragon {
     private String name;
     private int age;
-    private double weight;
+    private int weight;
     private String voice; //додаємо поля
     private String fire;
+    private String breed;
 
     public Dragon() {
+    }
+
+    public Dragon(String name, int age, int weight, String voice, String fire, String breed) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.voice = voice;
+        this.fire = fire;
+        this.breed = breed;
     }
 
     @Override
@@ -18,31 +28,16 @@ public class Dragon {
                 ", weight=" + weight +
                 ", voice='" + voice + '\'' +
                 ", fire='" + fire + '\'' +
+                ", breed='" + breed + '\'' +
                 '}';
     }
 
-    public Dragon(String name, int age, double weight, String voice, String fire) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-        this.voice = voice;
-        this.fire = fire;
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setVoice(String voice) {
-        this.voice = voice;
-    }
-
-    public String getVoice() { // Getter для фрази
-        return this.voice;
     }
 
     public int getAge() {
@@ -53,12 +48,20 @@ public class Dragon {
         this.age = age;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    public String getVoice() {
+        return voice;
+    }
+
+    public void setVoice(String voice) {
+        this.voice = voice;
     }
 
     public String getFire() {
@@ -67,14 +70,13 @@ public class Dragon {
 
     public void setFire(String fire) {
         this.fire = fire;
-
-        System.out.println("Дракон пускає вогонь: " + fire);
     }
 
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 }
-
-
-
-
-
-
