@@ -51,7 +51,7 @@ public class Main {
         System.out.println("Please enter the fire of your dragon");
         String fire = scanner.nextLine();
 
-        System.out.println("Please enter the breed of your dragon: DOBRYAK, NOBREED, NORMALNIY, ELEGAN");
+        System.out.println("Please enter the breed of your dragon: DBRYAK, NOBREED, NORMALNIY, ELEGAN");
         String breedString = scanner.nextLine();
         Breed breed = Breed.valueOf(breedString);
 
