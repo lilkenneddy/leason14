@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Dragon dragon1 = new Dragon("Smaug", 500, 2000);
+        Dragon dragon1 = new Dragon("Smaaug", 500, 2000);
         Dragon dragon2 = new Dragon("Smaug", 500, 2000);
 
         System.out.println(dragon1.equals(dragon2)); // true
