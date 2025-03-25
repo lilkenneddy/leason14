@@ -1,5 +1,7 @@
 package gmail.sklyaruk.rostislav1903;
 
+import java.util.Objects;
+
 public class Dragon {
     private String name;
     private int age;
@@ -19,6 +21,10 @@ public class Dragon {
         this.fire = fire;
         this.breed = breed;
     }
+
+    public Dragon(String smaug, int i, int i1) {
+    }
+
 
     @Override
     public String toString() {
@@ -79,4 +85,19 @@ public class Dragon {
     public void setBreed(String breed) {
         this.breed = breed;
     }
+
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Dragon dragon = (Dragon) obj;
+        return age == dragon.age &&
+                weight == dragon.weight &&
+                Objects.equals(name, dragon.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, weight);
+    }
+
 }

@@ -5,6 +5,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        Dragon dragon1 = new Dragon("Smaug", 500, 2000);
+        Dragon dragon2 = new Dragon("Smaug", 500, 2000);
+
+        System.out.println(dragon1.equals(dragon2)); // true
+        System.out.println(dragon1.hashCode() == dragon2.hashCode()); // true
+
+
         Scanner scanner = new Scanner(System.in);
 
         Dragon dragon = new Dragon();
@@ -55,4 +63,5 @@ public class Main {
         System.out.println("Вогонь: " + fire);
 
     }
+
 }
